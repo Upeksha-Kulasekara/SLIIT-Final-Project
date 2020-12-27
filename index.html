@@ -1,0 +1,681 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <title>FindFindingFound</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .cust-nav {
+            background-color: white !important;
+            margin-left: 6em;
+            margin-right: 6em;
+        }
+
+        .nav-link {
+            color: #00B4EF !important;
+            text-transform: uppercase;
+            font-weight: bold;
+            margin: 1em;
+        }
+
+        .nav-link:hover {
+            color: #FF9C01 !important;
+        }
+
+        .navbar-toggler {
+            background-color: #FF9C01;
+        }
+
+        #navbarSupportedContent {
+            background-color: white;
+            margin-top: 1em;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: inline-block;
+            color: white;
+            font-weight: 500;
+            padding-inline-start: 2em;
+            padding: 1em;
+            /* margin-left: 120px; */
+
+            text-decoration: none;
+        }
+
+        li a:hover {
+            color: #FF9C01;
+        }
+
+        .secondnav {
+
+            background-color: #00B4EF;
+            padding-left: 5em;
+        }
+
+        .hero-bg {
+            background-image: url(Images/OtherImages/background.jpg);
+            color: white;
+            text-align: left;
+            height: 30em;
+            padding-top: 10%;
+            padding-left: 50%;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .hero-bg h1 mark {
+            display: block;
+            font-size: larger;
+            color: white;
+            background-color: #FF9C01;
+            width: 65%;
+            padding: 5px;
+        }
+
+        .custom-register {
+            background-color: #00B4EF;
+            padding: 1em;
+            text-align: center;
+            font-style: normal;
+        }
+
+        .left {
+
+            padding: 0em;
+            margin: 0em;
+            margin-left: auto;
+        }
+
+        .right {
+
+            padding: 0em;
+            margin: 0em;
+            margin-right: auto;
+        }
+
+        .gradient-buttons .btn {
+            background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.2) 49%, rgba(0, 0, 0, 0.10) 51%, rgba(0, 0, 0, 0.05));
+            background-repeat: repeat-x;
+            color: white;
+            font-weight: bold;
+           
+
+        }
+
+        .card {
+            width: 100%;
+            height: 100%;
+
+        }
+
+        .sec-heading {
+            color: #FF9C01;
+            font-size: larger;
+            padding: 0;
+        }
+
+        #products {
+            margin: 50px 0 50px 0;
+
+        }
+
+        #products .card-badge {
+            position: absolute;
+            left: 10px;
+            top: 10px;
+            background: #FF9C01;
+            text-align: center;
+            color: #fff;
+            padding: 2px 5px;
+            font-size: 16px;
+        }
+
+        #products .card-badgesale {
+            position: absolute;
+            left: 10px;
+            top: 10px;
+            background-color: #00B4EF;
+            text-align: center;
+            color: #fff;
+            padding: 2px 5px;
+            font-size: 16px;
+        }
+
+        .img-fluid {
+            padding: 10px;
+        }
+
+        .cardtitle h5 {
+            text-transform: uppercase;
+            font-size: 18px;
+            color: #FF9C01;
+        }
+
+        .price {
+            color: #FF9C01;
+        }
+
+        .delprice {
+            color: rgba(121, 121, 121, 0.514);
+        }
+
+        .rate {
+            width: 1em;
+            height: 10px;
+        }
+
+        .customer img {
+            float: right;
+        }
+
+        .cust {
+            font-weight: bolder;
+            text-align: center;
+            padding: 0em;
+
+            justify-content: center;
+        }
+
+        .cusdate {
+            font-size: 12px;
+            font-style: oblique;
+            color: #707070bb;
+        }
+
+        .price {
+            text-align: right;
+            font-weight: 500;
+            color: black;
+        }
+
+        .found-border {
+            background-color: #FF9C01;
+            padding: 1em;
+            text-align: center;
+            font-style: normal;
+        }
+
+        .btn2 {
+            color: white;
+        }
+
+        .worktext {
+
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        .table-borderless {
+            font-weight: bold;
+            margin: 0em;
+            padding: 0em;
+        }
+
+        .detail-footer {
+            background-color: rgb(44, 44, 44);
+            width: 100%;
+            padding: 3rem;
+        }
+
+        .footer-text {
+            text-decoration: none;
+        }
+
+        .footer-text1 {
+            margin-left: 5em;
+        }
+
+        .footer-text:hover {
+            color: teal;
+
+        }
+
+        .lead {
+            color: #00B4EF;
+            font-weight: 500;
+            padding: 0em;
+
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Main-Navigation bar -->
+    <section>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light cust-nav">
+            <a class="navbar-brand" href="#"><img src="Images/OtherImages/logo.jpg" alt="Logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Register</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Cart</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </section>
+    <!-- Second-Navigation bar -->
+<div class="secondnav">
+   <ul>
+  <li><a href="#">Home</a></li>
+  <li><a href="#">My Projects</a></li>
+  <li><a href="#">Profile</a></li>
+  <li><a href="#">Inbox</a></li>
+</ul>
+</div>
+
+<!-- Main-Banner -->
+    <div class="hero-bg">
+        <section>
+            <h2>FindFindingFound</h2>
+            <h1><mark>Find what you want</mark></h1>
+            <p>FindFindingFound is the first and foremost marketplace where the buyere is in <br>
+                full control. This is the site to be when all other avenues fail.</p>
+
+        </section>
+    </div>
+
+    <!-- Blue-Border -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12 custom-register text-white">
+                <h5>Regardless of whether you are looking for something rare, looking for that special deal,
+                    <br>
+                    or just have something to provide,our platform wil enable your needs.
+                </h5>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 custom-register text-white"></div>
+            <div class="col-md-2 custom-register text-white">
+                <section class="left">Ready to get started ...?
+                    <br>
+                    <div class="card-body gradient-buttons">
+                        <button type="button" class="btn btn-info">REGISTER</button>
+                    </div>
+                </section>
+            </div>
+            <div class="col-md-2 custom-register text-white">
+                <section class="right">Already have an account...?
+                    <br>
+                    <div class="card-body gradient-buttons">
+                        <button type="button" class="btn btn-info">LOG IN</button>
+                    </div>
+                </section>
+            </div>
+            <div class="col-md-4 custom-register text-white"></div>
+        </div>
+    </div>
+
+<!-- Product Cards -->
+    <div class="container sec-heading mt-5">
+        <h2> What people are buying ?</h2>
+    </div>
+    <div class="container productcards">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="container">
+                    <div class="row" id="products">
+                        <div class="card rounded">
+                            <div class="card-image">
+                                <span class="card-badge">NEW</span>
+                                <img class="img-fluid" src="Images/Products/1.jpg" alt="Alternate Text" />
+                            </div>
+                            <div class="card-body text-center">
+                                <div class="cardtitle m-auto">
+                                    <h5>Safe Helmate</h5>
+                                </div>
+                                <img src="Images/Products/fivestar.png" alt="Ratings" height="25%" width="50%">
+                                <br>
+                                <span class="price">$499.00</span>
+                                <span class="delprice"><del>$599.00</del></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 ">
+                <div class="container">
+                    <div class="row" id="products">
+                        <div class="card rounded">
+                            <div class="card-image">
+                                <span class="card-badge">NEW</span>
+                                <img class="img-fluid" src="Images/Products/2.jpg" alt="Alternate Text" />
+                            </div>
+                            <div class="card-body text-center">
+                                <div class="cardtitle m-auto">
+                                    <h5>Kids Bag</h5>
+                                </div>
+                                <img src="Images/Products/fivestar.png" alt="Ratings" height="25%" width="50%">
+                                <br>
+                                <span class="price">$499.00</span>
+                                <span class="delprice"><del>$599.00</del></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 ">
+                <div class="container">
+                    <div class="row" id="products">
+                        <div class="card rounded">
+                            <div class="card-image">
+                                <span class="card-badgesale">SALE</span>
+                                <img class="img-fluid" src="Images/Products/3.jpg" alt="Alternate Text" />
+                            </div>
+                            <div class="card-body text-center">
+                                <div class="cardtitle m-auto">
+                                    <h5>Modern Bag</h5>
+                                </div>
+                                <img src="Images/Products/fivestar.png" alt="Ratings" height="25%" width="50%">
+                                <br>
+                                <span class="price">$499.00</span>
+                                <span class="delprice"><del>$599.00</del></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 ">
+                <div class="container">
+                    <div class="row" id="products">
+                        <div class="card rounded">
+                            <div class="card-image">
+                                <span class="card-badge">NEW</span>
+                                <img class="img-fluid" src="Images/Products/4.jpg" alt="Alternate Text" />
+                            </div>
+                            <div class="card-body text-center">
+                                <div class="cardtitle m-auto">
+                                    <h5>Headphone</h5>
+                                </div>
+                                <img src="Images/Products/fivestar.png" alt="Ratings">
+                                <br>
+                                <span class="price">$499.00</span>
+                                <span class="delprice"><del>$599.00</del></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+<!-- Customer-Bid-section  -->
+    <div class="container customer">
+        <table class="table">
+            <tbody>
+                <tr>
+                    <td>
+                        <img src="Images/Customers/1.jpg" alt="" height="100px" width="100px">
+                        </th>
+                    <td>
+                        <span class="cust">Translate Spanish in to English
+                            <br>
+                            <span class="cusdate">Posted 01/09/2019</span>
+                        </span>
+                    </td>
+                    <td>
+                        <br>
+                        <span class="price">$250.00 to $700.00</span>
+                    </td>
+                    <td>
+                        <div class="card-body gradient-buttons">
+                            <button type="button" class="btn btn-warning">Place Bid</button>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <img src="Images/Customers/2.jpg" alt="" height="100px" width="100px">
+                        </th>
+                    <td>
+                        <span class="cust">Translate Spanish in to English
+                            <br>
+                            <span class="cusdate">Posted 01/09/2019</span>
+                        </span>
+                    </td>
+                    <td>
+                        <br>
+                        <span class="price">$550.00 to $670.00</span>
+                    </td>
+                    <td>
+                        <div class="card-body gradient-buttons">
+                            <button type="button" class="btn btn-warning">Place Bid</button>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <img src="Images/Customers/3.jpg" alt="" height="100px" width="100px">
+                        </th>
+                    <td>
+                        <span class="cust">Translate Spanish in to English
+                            <br>
+                            <span class="cusdate">Posted 01/09/2019</span>
+                        </span>
+                    </td>
+                    <td>
+                        <br>
+                        <span class="price">$250.00 to $600.00</span>
+                    </td>
+                    <td>
+                        <div class="card-body gradient-buttons">
+                            <button type="button" class="btn btn-warning">Place Bid</button>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <img src="Images/Customers/4.jpg" alt="" height="100px" width="100px">
+                        </th>
+                    <td>
+                        <span class="cust">Translate Spanish in to English
+                            <br>
+                            <span class="cusdate">Posted 01/09/2019</span>
+                        </span>
+                    </td>
+                    <td>
+                        <br>
+                        <span class="price">$450.00 to $900.00</span>
+                    </td>
+                    <td>
+                        <div class="card-body gradient-buttons">
+                            <button type="button" class="btn btn-warning">Place Bid</button>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+<!-- Orange-Border -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12 found-border text-white">
+                <h5>There are 1000s of sites out the internet selling items, but it is becoming more common for buyers
+                    to not
+                    <br>
+                    find what they are looking for. We are now providing a buyer-centric platform
+                    <br>
+                    so that the sellers can come to you instead!
+                </h5>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 found-border text-white"></div>
+            <div class="col-md-2 found-border text-white">
+                <section class="left">
+                    <div class="card-body gradient-buttons">
+                        <button type="button" class="btn btn-warning">Find Something</button>
+                    </div>
+                </section>
+            </div>
+            <div class="col-md-2 found-border text-white">
+                <section class="right">
+                    <div class="card-body gradient-buttons">
+                        <button type="button" class="btn btn-warning">Found Something</button>
+                    </div>
+                </section>
+            </div>
+            <div class="col-md-4 found-border text-white"></div>
+        </div>
+    </div>
+
+<!-- How it works -->
+    <div class="container sec-heading mt-5">
+        <h2> How it works ?</h2>
+    </div>
+<br>
+<br>
+
+    <div class="container text-center">
+        <table class="table table-borderless">
+            <thead>
+                <tr>
+                    <th scope="col"></th>
+                    <th scope="col">
+                        <h3>FIND</h3>
+                    </th>
+                    <th scope="col">
+                        <h3>FINDING</h3>
+                    </th>
+                    <th scope="col">
+                        <h3>FOUND</h3>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row" colspan="4">
+                        <img src="Images/OtherImages/howitworks.jpg" alt="" width="80%" height="auto">
+                    </th>
+                </tr>
+                <tr>
+                    <th scope="row"></th>
+                    <td>Post the ietm you are
+                        <br>
+                        looking for, along with
+                        <br>
+                        your terms
+                    </td>
+                    <td>Wait for sellers to
+                        <br>
+                        respond and agress to
+                        <br>
+                        your terms
+                    </td>
+                    <td>Select your ideal seller
+                        <br>
+                        and await delivery
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+<br>
+<br>
+<br>
+<br>
+
+<!-- Footer -->
+    <section class="container-fluid detail-footer mt-5 text-white">
+        <div class="row">
+            <div class="col-md-4">
+                <img src="Images/OtherImages/logotrsns.png" alt="" style="margin-top: -30px; margin-left: 40px;">
+                <br>
+                <p class="footer-text1">FindFindingFound is the first and</span>
+                <br>
+                foremost marketplace where the</span>
+                <br>
+                buyer is in full control. This is the</span>
+                <br>
+                site to be when all other avenues fail.</p>
+
+                <br>
+
+            </div>
+            <div class="col-md-2">
+                <p class="lead">Network</p>
+                <span class="footer-text">Projects</span><br>
+                <span class="footer-text">Services</span><br>
+                <span class="footer-text">Fantero</span><br>
+                <span class="footer-text">Freemarket</span><br>
+            </div>
+
+            <div class="col-md-2">
+                <p class="lead">About</p>
+                <span class="footer-text">About us</span><br>
+                <span class="footer-text">How it Works</span><br>
+                <span class="footer-text">Security</span><br>
+                <span class="footer-text">Report</span><br>
+                <span class="footer-text">Free & Charges</span><br>
+            </div>
+
+            <div class="col-md-4">
+                <p class="lead">Follow Us</p>
+                <a href=""><img src="Images/SocialMediaIcons/pinterest.png" alt="" width="15%"></a>
+                <a href=""><img src="Images/SocialMediaIcons/twitter.png" alt="" width="15%"></a>
+                <a href=""><img src="Images/SocialMediaIcons/youtube.png" alt="" width="15%"></a>
+            </div>
+        </div>
+        </div>
+    </section>
+
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
